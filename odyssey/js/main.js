@@ -328,6 +328,11 @@ function begin() {
   if (game.started) return;
   game.started = true;
   if (!Q.has('noaudio')) audio.init().then(() => { for (const f of world.fires) audio.addFire(f); });
+  // ?scene=wave2 | wave3 | cyclops | temple starts at that part of the island (for showing one part without playing up to it).
+  const scene = Q.get('scene'), put = (x, z, yaw) => { player.pos.set(x, groundAt(x, z), z); player.yaw = yaw; cam.yaw = yaw; cam.init = false; };
+  if (scene === 'wave2' || scene === 'wave3') director.startWave(scene === 'wave2' ? 2 : 3);
+  else if (scene === 'cyclops') { put(POI.cave.x, POI.cave.z + 48, Math.PI); wakeCyclops(); }
+  else if (scene === 'temple') { game.manualWaves = true; put(POI.temple.x, POI.temple.z + 30, Math.PI); }
 }
 input.enabled = true;
 input.onFirst = begin;
