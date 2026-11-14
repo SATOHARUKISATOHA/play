@@ -1,0 +1,212 @@
+{
+ "note": "times in seconds. foot: heel-strike times (foot bone crosses 18% above its lowest height, going down). hit: moments of peak weapon-tip speed (tip = xiphos/dory tip along the grip axis); use for hit-stop / damage windows.",
+ "foot": {
+  "Walk_Loop": {
+   "duration": 1.333,
+   "left": [
+    1.267
+   ],
+   "right": [
+    0.6
+   ]
+  },
+  "Walk_Formal_Loop": {
+   "duration": 1.333,
+   "left": [
+    1.267
+   ],
+   "right": [
+    0.6
+   ]
+  },
+  "Jog_Fwd_Loop": {
+   "duration": 0.933,
+   "left": [
+    0.925
+   ],
+   "right": [
+    0.458
+   ]
+  },
+  "Sprint_Loop": {
+   "duration": 0.667,
+   "left": [
+    0.625
+   ],
+   "right": [
+    0.325
+   ]
+  },
+  "Crouch_Fwd_Loop": {
+   "duration": 2,
+   "left": [
+    1.933
+   ],
+   "right": [
+    0.958
+   ]
+  },
+  "Walk_Carry_Loop": {
+   "duration": 2,
+   "left": [
+    1.917
+   ],
+   "right": [
+    0.917
+   ]
+  }
+ },
+ "hit": {
+  "Shield_Dash_RM": {
+   "duration": 1.1,
+   "tipLength": 0,
+   "peakSpeed": 15.38,
+   "strikes": [
+    {
+     "t": 0.05,
+     "speed": 10.43
+    }
+   ]
+  },
+  "Sword_Regular_A": {
+   "duration": 0.433,
+   "tipLength": 0.5,
+   "peakSpeed": 49,
+   "strikes": [
+    {
+     "t": 0.217,
+     "speed": 48.62
+    }
+   ]
+  },
+  "Sword_Regular_B": {
+   "duration": 0.533,
+   "tipLength": 0.5,
+   "peakSpeed": 61.61,
+   "strikes": [
+    {
+     "t": 0.267,
+     "speed": 61.61
+    }
+   ]
+  },
+  "Sword_Regular_C": {
+   "duration": 2,
+   "tipLength": 0.5,
+   "peakSpeed": 58.46,
+   "strikes": [
+    {
+     "t": 0.65,
+     "speed": 58.46
+    }
+   ]
+  },
+  "Sword_Regular_Combo": {
+   "duration": 3,
+   "tipLength": 0.5,
+   "peakSpeed": 61.6,
+   "strikes": [
+    {
+     "t": 0.217,
+     "speed": 48.62
+    },
+    {
+     "t": 0.733,
+     "speed": 61.6
+    },
+    {
+     "t": 1.55,
+     "speed": 56.4
+    }
+   ]
+  },
+  "Sword_Attack": {
+   "duration": 1.533,
+   "tipLength": 0.5,
+   "peakSpeed": 45.95,
+   "strikes": [
+    {
+     "t": 0.4,
+     "speed": 45.89
+    }
+   ]
+  },
+  "Sword_Dash_RM": {
+   "duration": 1.567,
+   "tipLength": 0.5,
+   "peakSpeed": 64.49,
+   "strikes": [
+    {
+     "t": 0.317,
+     "speed": 64.49
+    }
+   ]
+  },
+  "Melee_Hook": {
+   "duration": 0.467,
+   "tipLength": 0.5,
+   "peakSpeed": 67.74,
+   "strikes": [
+    {
+     "t": 0.25,
+     "speed": 67.74
+    }
+   ]
+  },
+  "Shield_OneShot": {
+   "duration": 0.833,
+   "tipLength": 0.5,
+   "peakSpeed": 8.07,
+   "strikes": [
+    {
+     "t": 0.05,
+     "speed": 7.68
+    }
+   ]
+  },
+  "Punch_Jab": {
+   "duration": 0.867,
+   "tipLength": 0.3,
+   "peakSpeed": 3.83,
+   "strikes": [
+    {
+     "t": 0.15,
+     "speed": 2.59
+    }
+   ]
+  },
+  "Punch_Cross": {
+   "duration": 1,
+   "tipLength": 0.3,
+   "peakSpeed": 9.36,
+   "strikes": [
+    {
+     "t": 0.183,
+     "speed": 9.36
+    }
+   ]
+  },
+  "OverhandThrow": {
+   "duration": 1.333,
+   "tipLength": 0.5,
+   "peakSpeed": 29.54,
+   "strikes": [
+    {
+     "t": 0.383,
+     "speed": 29.54
+    }
+   ]
+  },
+  "Spear_Thrust_Overhand": {
+   "duration": 0.85,
+   "tipLength": 1.6,
+   "peakSpeed": 19.52,
+   "strikes": [
+    {
+     "t": 0.217,
+     "speed": 19.52
+    }
+   ]
+  }
+ }
+}

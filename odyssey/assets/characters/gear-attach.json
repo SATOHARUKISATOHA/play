@@ -1,0 +1,161 @@
+{
+ "skeleton": "UBC Superhero_Male (65 bones, UE names)",
+ "note": "local transform of each gear root relative to the bone (three.js space, metres). Weapons: grip at origin, tip -Z, edge +Y. Shields: front +Z.",
+ "attach": {
+  "helmet_corinthian": {
+   "bone": "Head",
+   "position": [
+    0,
+    -1.59862,
+    0.06373
+   ],
+   "quaternion": [
+    -0.01448,
+    0,
+    0,
+    0.9999
+   ]
+  },
+  "helmet_thracian": {
+   "bone": "Head",
+   "position": [
+    0,
+    -1.59862,
+    0.06373
+   ],
+   "quaternion": [
+    -0.01448,
+    0,
+    0,
+    0.9999
+   ]
+  },
+  "helmet_pilos": {
+   "bone": "Head",
+   "position": [
+    0,
+    -1.59862,
+    0.06373
+   ],
+   "quaternion": [
+    -0.01448,
+    0,
+    0,
+    0.9999
+   ]
+  },
+  "dory": {
+   "bone": "hand_r",
+   "position": [
+    -0.02491,
+    0.09711,
+    0.00393
+   ],
+   "quaternion": [
+    -0.0195,
+    0.99226,
+    -0.12258,
+    0.00488
+   ]
+  },
+  "javelin": {
+   "bone": "hand_r",
+   "position": [
+    -0.02491,
+    0.09711,
+    0.00393
+   ],
+   "quaternion": [
+    -0.0195,
+    0.99226,
+    -0.12258,
+    0.00488
+   ]
+  },
+  "xiphos": {
+   "bone": "hand_r",
+   "position": [
+    -0.02491,
+    0.09711,
+    0.00393
+   ],
+   "quaternion": [
+    -0.0195,
+    0.99226,
+    -0.12258,
+    0.00488
+   ]
+  },
+  "kopis": {
+   "bone": "hand_r",
+   "position": [
+    -0.02491,
+    0.09711,
+    0.00393
+   ],
+   "quaternion": [
+    -0.0195,
+    0.99226,
+    -0.12258,
+    0.00488
+   ]
+  },
+  "javelin_throw": {
+   "bone": "hand_r",
+   "position": [
+    -0.04359,
+    0.10543,
+    0.00159
+   ],
+   "quaternion": [
+    -0.0195,
+    0.99226,
+    -0.12258,
+    0.00488
+   ],
+   "note": "OverhandThrow: tip thumb side"
+  },
+  "aspis": {
+   "bone": "lowerarm_l",
+   "position": [
+    0.05493,
+    0.06,
+    -0.00284
+   ],
+   "quaternion": [
+    0.48693,
+    -0.48693,
+    -0.51274,
+    0.51274
+   ]
+  },
+  "aspis_black": {
+   "bone": "lowerarm_l",
+   "position": [
+    0.05493,
+    0.06,
+    -0.00284
+   ],
+   "quaternion": [
+    0.48693,
+    -0.48693,
+    -0.51274,
+    0.51274
+   ]
+  },
+  "pelta": {
+   "bone": "lowerarm_l",
+   "position": [
+    0.04098,
+    0.03,
+    0.01791
+   ],
+   "quaternion": [
+    0.48693,
+    -0.48693,
+    -0.51274,
+    0.51274
+   ]
+  }
+ }
+}

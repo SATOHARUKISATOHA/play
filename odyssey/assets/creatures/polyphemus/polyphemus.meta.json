@@ -1,0 +1,372 @@
+{
+ "file": "polyphemus.glb",
+ "name": "Polyphemus",
+ "height_m_standing": 10.0,
+ "forward": "+Z (three.js)",
+ "up": "+Y",
+ "origin": "between the feet on the ground",
+ "hip_height_m": 4.872,
+ "eye_bone": "eye",
+ "eye_local_forward": "+Y of the eye bone (rotate it to make the eye track the player)",
+ "eye_height_m": {
+  "standing_cIdle_start": 9.023,
+  "cStagger": 2.197
+ },
+ "club": {
+  "mesh_handle": "club_handle",
+  "mesh_head": "club_head",
+  "bone_head": "clubTip",
+  "grip_bone": "hand_R",
+  "break": "hide club_head (or scale clubTip to 0) and spawn a debris copy at clubTip"
+ },
+ "boulder_hand": "hand_L",
+ "clips": {
+  "cIdle": {
+   "duration": 2.958,
+   "loop": true,
+   "origin": "source (SJunior3d), renamed",
+   "events": {}
+  },
+  "cIdleBreak": {
+   "duration": 3.5,
+   "loop": false,
+   "origin": "source (SJunior3d), renamed",
+   "events": {}
+  },
+  "cWalk": {
+   "duration": 3.958,
+   "loop": true,
+   "origin": "source (SJunior3d), renamed",
+   "events": {}
+  },
+  "cRun": {
+   "duration": 2.625,
+   "loop": true,
+   "origin": "source (SJunior3d), renamed",
+   "events": {}
+  },
+  "cSweep": {
+   "duration": 1.667,
+   "loop": false,
+   "origin": "source (SJunior3d), renamed",
+   "events": {
+    "hitStart": 0.4,
+    "hitEnd": 0.56,
+    "note": "club rises (0.1-0.3) then a full 360-degree low swing; hits all around"
+   }
+  },
+  "cSlam": {
+   "duration": 2.167,
+   "loop": false,
+   "origin": "source (SJunior3d), renamed",
+   "events": {
+    "hitAt": 0.62
+   }
+  },
+  "cHit": {
+   "duration": 0.917,
+   "loop": false,
+   "origin": "source (SJunior3d), renamed",
+   "events": {}
+  },
+  "cDeath": {
+   "duration": 1.917,
+   "loop": false,
+   "origin": "source (SJunior3d), renamed",
+   "events": {
+    "impactAt": 0.64
+   }
+  },
+  "cStomp": {
+   "duration": 2.0,
+   "loop": false,
+   "origin": "authored on the source skeleton (tools/creatures/anim_author.py)",
+   "events": {
+    "hitAt": 0.5
+   }
+  },
+  "cThrow": {
+   "duration": 2.792,
+   "loop": false,
+   "origin": "authored on the source skeleton (tools/creatures/anim_author.py)",
+   "events": {
+    "grabAt": 0.2,
+    "releaseAt": 0.62
+   }
+  },
+  "cRoar": {
+   "duration": 2.583,
+   "loop": false,
+   "origin": "authored on the source skeleton (tools/creatures/anim_author.py)",
+   "events": {
+    "roarAt": 0.24
+   }
+  },
+  "cFall": {
+   "duration": 1.0,
+   "loop": false,
+   "origin": "authored on the source skeleton (tools/creatures/anim_author.py)",
+   "events": {
+    "impactAt": 0.72
+   }
+  },
+  "cStagger": {
+   "duration": 2.417,
+   "loop": true,
+   "origin": "authored on the source skeleton (tools/creatures/anim_author.py)",
+   "events": {}
+  },
+  "cRecover": {
+   "duration": 1.583,
+   "loop": false,
+   "origin": "authored on the source skeleton (tools/creatures/anim_author.py)",
+   "events": {}
+  },
+  "cSleep": {
+   "duration": 4.5,
+   "loop": true,
+   "origin": "authored on the source skeleton (tools/creatures/anim_author.py)",
+   "events": {}
+  },
+  "cWake": {
+   "duration": 3.0,
+   "loop": false,
+   "origin": "authored on the source skeleton (tools/creatures/anim_author.py)",
+   "events": {}
+  }
+ },
+ "clip_labels_ja": {
+  "cIdle": "待機",
+  "cIdleBreak": "見回し",
+  "cWalk": "歩き",
+  "cRun": "走り",
+  "cSweep": "薙ぎ払い(一回転)",
+  "cSlam": "振り下ろし",
+  "cStomp": "踏みつけ",
+  "cThrow": "岩投げ",
+  "cRoar": "咆哮",
+  "cHit": "被弾",
+  "cFall": "転倒",
+  "cStagger": "よろめき(目が下に)",
+  "cRecover": "起き上がり",
+  "cSleep": "洞窟で眠る",
+  "cWake": "起床",
+  "cDeath": "死亡"
+ },
+ "clip_order": [
+  "cIdle",
+  "cWalk",
+  "cRun",
+  "cRoar",
+  "cStomp",
+  "cSweep",
+  "cSlam",
+  "cThrow",
+  "cHit",
+  "cFall",
+  "cStagger",
+  "cRecover",
+  "cDeath",
+  "cSleep",
+  "cWake",
+  "cIdleBreak"
+ ],
+ "zones_m": [
+  {
+   "bone": "eye",
+   "r": 0.85,
+   "weak": true
+  },
+  {
+   "bone": "head",
+   "r": 1.05
+  },
+  {
+   "bone": "chest",
+   "r": 1.5
+  },
+  {
+   "bone": "spine2",
+   "r": 1.3
+  },
+  {
+   "bone": "hips",
+   "r": 1.35
+  },
+  {
+   "bone": "thigh_L",
+   "r": 0.95
+  },
+  {
+   "bone": "thigh_R",
+   "r": 0.95
+  },
+  {
+   "bone": "shin_L",
+   "r": 0.75
+  },
+  {
+   "bone": "shin_R",
+   "r": 0.75
+  },
+  {
+   "bone": "foot_L",
+   "r": 0.75
+  },
+  {
+   "bone": "foot_R",
+   "r": 0.75
+  },
+  {
+   "bone": "foreArm_L",
+   "r": 0.6
+  },
+  {
+   "bone": "foreArm_R",
+   "r": 0.6
+  },
+  {
+   "bone": "hand_L",
+   "r": 0.6
+  },
+  {
+   "bone": "hand_R",
+   "r": 0.6
+  }
+ ],
+ "v1_bone_map": {
+  "hips": "hips",
+  "spine": "spine2",
+  "chest": "chest",
+  "neck": "neck1",
+  "head": "head",
+  "eye": "eye",
+  "upperArmL": "upperArm_L",
+  "foreArmL": "foreArm_L",
+  "handL": "hand_L",
+  "upperArmR": "upperArm_R",
+  "foreArmR": "foreArm_R",
+  "handR": "hand_R",
+  "clubTip": "clubTip",
+  "thighL": "thigh_L",
+  "shinL": "shin_L",
+  "footL": "foot_L",
+  "thighR": "thigh_R",
+  "shinR": "shin_R",
+  "footR": "foot_R"
+ },
+ "source": {
+  "title": "Troll",
+  "author": "SJunior3d",
+  "page": "https://sketchfab.com/3d-models/troll-bceb1cb47186457c8571a23e6aff1b8e",
+  "license": "CC BY 4.0",
+  "obtained_from": "https://huggingface.co/datasets/allenai/objaverse (glbs/000-016/bceb1cb47186457c8571a23e6aff1b8e.glb)"
+ },
+ "modifications": [
+  "two eyes removed, one central eye (procedural texture) with lids and an eye bone",
+  "old eye area of the skin colour/normal textures over-painted with brow skin",
+  "club split into handle and breakable head (clubTip bone)",
+  "bones renamed (hips, spine1.., head, jaw, eye, *_L/_R)",
+  "scaled to 10 m",
+  "clips renamed to the v1 names; 8 clips authored: cStomp, cThrow, cRoar, cFall, cStagger, cRecover, cSleep, cWake"
+ ],
+ "build": {
+  "eye": {
+   "old_centres": [
+    [
+     2.72,
+     -44.23,
+     174.44
+    ],
+    [
+     -3.7,
+     -44.23,
+     174.51
+    ]
+   ],
+   "centre_world": [
+    -0.4771386384963989,
+    -42.61553955078125,
+    175.3229522705078
+   ],
+   "radius": 4.5,
+   "fwd": [
+    4.32608685514424e-05,
+    -0.9953765273094177,
+    0.09604959934949875
+   ],
+   "up": [
+    0.01078247930854559,
+    0.09604448825120926,
+    0.9953187108039856
+   ],
+   "lat": [
+    0.9999418258666992,
+    -0.0009925930062308908,
+    -0.010736781172454357
+   ],
+   "deleted_faces": 406,
+   "hole_edges": 40,
+   "islands_removed": 0,
+   "lid_faces": 80,
+   "smoothed_verts": 142,
+   "hair_faces_removed": 54
+  },
+  "club": {
+   "parts": 2,
+   "head_verts": 204,
+   "head_centre_world": [
+    -53.68681716918945,
+    -74.32577514648438,
+    23.816650390625
+   ],
+   "head_radius": 70.08707313539784
+  },
+  "paint": [
+   {
+    "tex": "Base Color",
+    "uv_eye": [
+     0.692,
+     0.9461
+    ],
+    "shift_px": [
+     1,
+     14
+    ]
+   },
+   {
+    "tex": "Base Color",
+    "uv_eye": [
+     0.72,
+     0.9457
+    ],
+    "shift_px": [
+     -1,
+     14
+    ]
+   },
+   {
+    "tex": "Normal",
+    "uv_eye": [
+     0.692,
+     0.9461
+    ],
+    "shift_px": [
+     1,
+     14
+    ]
+   },
+   {
+    "tex": "Normal",
+    "uv_eye": [
+     0.72,
+     0.9457
+    ],
+    "shift_px": [
+     -1,
+     14
+    ]
+   }
+  ]
+ }
+}

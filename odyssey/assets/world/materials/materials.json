@@ -1,0 +1,243 @@
+{
+ "sand": {
+  "kind": "terrain",
+  "tile_m": 30.0,
+  "maps": [
+   "sand_diff.jpg",
+   "sand_nor.jpg",
+   "sand_arh.jpg"
+  ],
+  "packing": "arh: R=ambient occlusion, G=roughness, B=height (0..1, for height-blend)",
+  "px": 2048,
+  "mean_albedo_linear": [
+   0.2962,
+   0.2369,
+   0.18
+  ],
+  "mean_roughness": 0.61,
+  "source": "aerial_beach_01"
+ },
+ "sand_fine": {
+  "kind": "terrain",
+  "tile_m": 1.8,
+  "maps": [
+   "sand_fine_diff.jpg",
+   "sand_fine_nor.jpg",
+   "sand_fine_arh.jpg"
+  ],
+  "packing": "arh: R=ambient occlusion, G=roughness, B=height (0..1, for height-blend)",
+  "px": 2048,
+  "mean_albedo_linear": [
+   0.3027,
+   0.2187,
+   0.1195
+  ],
+  "mean_roughness": 0.976,
+  "source": "dense_sand"
+ },
+ "earth": {
+  "kind": "terrain",
+  "tile_m": 4.0,
+  "maps": [
+   "earth_diff.jpg",
+   "earth_nor.jpg",
+   "earth_arh.jpg"
+  ],
+  "packing": "arh: R=ambient occlusion, G=roughness, B=height (0..1, for height-blend)",
+  "px": 2048,
+  "mean_albedo_linear": [
+   0.3191,
+   0.1877,
+   0.0878
+  ],
+  "mean_roughness": 0.812,
+  "source": "dry_ground_rocks"
+ },
+ "grass": {
+  "kind": "terrain",
+  "tile_m": 2.51,
+  "maps": [
+   "grass_diff.jpg",
+   "grass_nor.jpg",
+   "grass_arh.jpg"
+  ],
+  "packing": "arh: R=ambient occlusion, G=roughness, B=height (0..1, for height-blend)",
+  "px": 2048,
+  "mean_albedo_linear": [
+   0.1651,
+   0.1202,
+   0.0492
+  ],
+  "mean_roughness": 0.937,
+  "source": "grass_ground"
+ },
+ "rock": {
+  "kind": "terrain",
+  "tile_m": 5.75,
+  "maps": [
+   "rock_diff.jpg",
+   "rock_nor.jpg",
+   "rock_arh.jpg"
+  ],
+  "packing": "arh: R=ambient occlusion, G=roughness, B=height (0..1, for height-blend)",
+  "px": 2048,
+  "mean_albedo_linear": [
+   0.3444,
+   0.2199,
+   0.1164
+  ],
+  "mean_roughness": 0.872,
+  "source": "marble_cliff_03",
+  "object_variant": {
+   "maps": [
+    "rock_obj_diff.jpg",
+    "rock_obj_nor.jpg",
+    "rock_obj_arm.jpg"
+   ],
+   "px": 1024,
+   "packing": "glTF ORM (R=AO, G=roughness, B=metal 0); used by cave_mouth.glb, sheep_pen.glb, camp ash"
+  }
+ },
+ "wood": {
+  "kind": "object",
+  "tile_m": 1.0,
+  "maps": [
+   "wood_diff.jpg",
+   "wood_nor.jpg",
+   "wood_arm.jpg"
+  ],
+  "packing": "arm: R=AO, G=roughness, B=metalness (glTF order)",
+  "px": 1024,
+  "mean_albedo_linear": [
+   0.1609,
+   0.1387,
+   0.1113
+  ],
+  "mean_roughness": 0.517,
+  "source": "brown_planks_03"
+ },
+ "terracotta": {
+  "kind": "object",
+  "tile_m": 2.0,
+  "maps": [
+   "terracotta_diff.jpg",
+   "terracotta_nor.jpg",
+   "terracotta_arm.jpg"
+  ],
+  "packing": "arm: R=AO, G=roughness, B=metalness (glTF order)",
+  "px": 1024,
+  "mean_albedo_linear": [
+   0.2987,
+   0.0964,
+   0.0183
+  ],
+  "mean_roughness": 0.919,
+  "source": "clay_plaster"
+ },
+ "marble": {
+  "kind": "object",
+  "tile_m": 1.6,
+  "maps": [
+   "marble_diff.jpg",
+   "marble_nor.jpg",
+   "marble_arm.jpg"
+  ],
+  "packing": "arm: R=AO, G=roughness, B=metalness (glTF order)",
+  "px": [
+   1024,
+   1024
+  ],
+  "mean_albedo_linear": [
+   0.6074,
+   0.5379,
+   0.4463
+  ],
+  "mean_roughness": 0.522,
+  "source": "Marble014"
+ },
+ "linen": {
+  "kind": "object",
+  "tile_m": 0.6,
+  "maps": [
+   "linen_diff.jpg",
+   "linen_nor.jpg",
+   "linen_arm.jpg"
+  ],
+  "packing": "arm: R=AO, G=roughness, B=metalness (glTF order)",
+  "px": [
+   1024,
+   1024
+  ],
+  "mean_albedo_linear": [
+   0.4811,
+   0.4188,
+   0.3163
+  ],
+  "mean_roughness": 0.818,
+  "source": "Fabric066"
+ },
+ "bark": {
+  "kind": "object",
+  "tile_m": 1.0,
+  "maps": [
+   "bark_diff.jpg",
+   "bark_nor.jpg",
+   "bark_arm.jpg"
+  ],
+  "packing": "arm: R=AO, G=roughness, B=metalness (glTF order)",
+  "px": [
+   512,
+   1024
+  ],
+  "mean_albedo_linear": [
+   0.2297,
+   0.222,
+   0.2041
+  ],
+  "mean_roughness": 0.725,
+  "source": "Bark001"
+ },
+ "grass_dry": {
+  "kind": "foliage-atlas",
+  "maps": [
+   "grass_dry_rgba.png",
+   "grass_dry_nor.jpg"
+  ],
+  "px": [
+   1024,
+   1024
+  ],
+  "note": "alphaTest 0.5 (or alphaToCoverage with MSAA); colour dilated into cut-out area",
+  "source": "Foliage002",
+  "mean_albedo_linear": [
+   0.275,
+   0.2162,
+   0.134
+  ]
+ },
+ "foliage_cards": {
+  "kind": "foliage-cards",
+  "maps": [
+   "olive_cluster_rgba.png",
+   "cypress_sprig_rgba.png",
+   "mastic_cluster_rgba.png",
+   "grass_tuft_rgba.png"
+  ],
+  "px": 512,
+  "note": "cut-out cards composed from ambientCG LeafSet013 / LeafSet019 / Foliage005 (CC0); colour dilated into the cut-out; alphaTest 0.5 + keepAlphaCoverage()",
+  "used_by": [
+   "olive_tree.glb",
+   "cypress_tree.glb",
+   "bush_mastic.glb",
+   "dev/world-demo grass"
+  ]
+ },
+ "ship_eye": {
+  "kind": "decal",
+  "maps": [
+   "ship_eye_rgba.png"
+  ],
+  "note": "painted eye (ophthalmos) for galley.glb; drawn here, no outside source"
+ },
+ "_units": "tile_m = metres covered by one texture repeat (use UV = world_xz / tile_m)"
+}

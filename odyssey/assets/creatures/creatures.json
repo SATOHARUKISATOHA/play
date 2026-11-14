@@ -1,0 +1,270 @@
+{
+ "note": "ODYSSEY v2 creatures (scout-creatures 2026-11-14). Sizes in metres; scale = multiply the GLB root to reach the stated size.",
+ "creatures": [
+  {
+   "id": "polyphemus",
+   "label": "ポリュペモス",
+   "file": "polyphemus/polyphemus.glb",
+   "meta": "polyphemus/polyphemus.meta.json",
+   "scale": 1,
+   "size_m": "height 10",
+   "credit": "\"Troll\" by SJunior3d — https://sketchfab.com/3d-models/troll-bceb1cb47186457c8571a23e6aff1b8e（改変）",
+   "license": "CC BY 4.0",
+   "eyeBone": "eye",
+   "clubHead": "club_head",
+   "clipOrder": [
+    "cIdle",
+    "cWalk",
+    "cRun",
+    "cRoar",
+    "cStomp",
+    "cSweep",
+    "cSlam",
+    "cThrow",
+    "cHit",
+    "cFall",
+    "cStagger",
+    "cRecover",
+    "cDeath",
+    "cSleep",
+    "cWake",
+    "cIdleBreak"
+   ],
+   "clipLabels": {
+    "cIdle": "待機",
+    "cIdleBreak": "見回し",
+    "cWalk": "歩き",
+    "cRun": "走り",
+    "cSweep": "薙ぎ払い(一回転)",
+    "cSlam": "振り下ろし",
+    "cStomp": "踏みつけ",
+    "cThrow": "岩投げ",
+    "cRoar": "咆哮",
+    "cHit": "被弾",
+    "cFall": "転倒",
+    "cStagger": "よろめき(目が下に)",
+    "cRecover": "起き上がり",
+    "cSleep": "洞窟で眠る",
+    "cWake": "起床",
+    "cDeath": "死亡"
+   },
+   "clips": {
+    "cIdle": {
+     "loop": true,
+     "events": {}
+    },
+    "cIdleBreak": {
+     "loop": false,
+     "events": {}
+    },
+    "cWalk": {
+     "loop": true,
+     "events": {}
+    },
+    "cRun": {
+     "loop": true,
+     "events": {}
+    },
+    "cSweep": {
+     "loop": false,
+     "events": {
+      "hitStart": 0.4,
+      "hitEnd": 0.56
+     }
+    },
+    "cSlam": {
+     "loop": false,
+     "events": {
+      "hitAt": 0.62
+     }
+    },
+    "cHit": {
+     "loop": false,
+     "events": {}
+    },
+    "cDeath": {
+     "loop": false,
+     "events": {
+      "impactAt": 0.64
+     }
+    },
+    "cStomp": {
+     "loop": false,
+     "events": {
+      "hitAt": 0.5
+     }
+    },
+    "cThrow": {
+     "loop": false,
+     "events": {
+      "grabAt": 0.2,
+      "releaseAt": 0.62
+     }
+    },
+    "cRoar": {
+     "loop": false,
+     "events": {
+      "roarAt": 0.24
+     }
+    },
+    "cFall": {
+     "loop": false,
+     "events": {
+      "impactAt": 0.72
+     }
+    },
+    "cStagger": {
+     "loop": true,
+     "events": {}
+    },
+    "cRecover": {
+     "loop": false,
+     "events": {}
+    },
+    "cSleep": {
+     "loop": true,
+     "events": {}
+    },
+    "cWake": {
+     "loop": false,
+     "events": {}
+    }
+   },
+   "zones": [
+    {
+     "bone": "eye",
+     "r": 0.85,
+     "weak": true
+    },
+    {
+     "bone": "head",
+     "r": 1.05
+    },
+    {
+     "bone": "chest",
+     "r": 1.5
+    },
+    {
+     "bone": "spine2",
+     "r": 1.3
+    },
+    {
+     "bone": "hips",
+     "r": 1.35
+    },
+    {
+     "bone": "thigh_L",
+     "r": 0.95
+    },
+    {
+     "bone": "thigh_R",
+     "r": 0.95
+    },
+    {
+     "bone": "shin_L",
+     "r": 0.75
+    },
+    {
+     "bone": "shin_R",
+     "r": 0.75
+    },
+    {
+     "bone": "foot_L",
+     "r": 0.75
+    },
+    {
+     "bone": "foot_R",
+     "r": 0.75
+    },
+    {
+     "bone": "foreArm_L",
+     "r": 0.6
+    },
+    {
+     "bone": "foreArm_R",
+     "r": 0.6
+    },
+    {
+     "bone": "hand_L",
+     "r": 0.6
+    },
+    {
+     "bone": "hand_R",
+     "r": 0.6
+    }
+   ],
+   "defaultClip": "cIdle",
+   "viewTargetY": 5.0,
+   "viewDist": 26
+  },
+  {
+   "id": "sea-serpent",
+   "label": "海の首長竜（沖の海蛇役）",
+   "file": "sea-serpent/pistosaur.glb",
+   "scale": 2.8481,
+   "size_m": "length 18",
+   "ground": true,
+   "lift": 1.3,
+   "credit": "\"Pistosaur Animated\" by RickStikkelorum — https://sketchfab.com/3d-models/pistosaur-animated-773667575a264c7baa4ec404115a044b",
+   "license": "CC BY 4.0",
+   "clipLabels": {
+    "SwimmingBiting": "泳ぎ・噛みつき（ループ）"
+   },
+   "clips": {
+    "SwimmingBiting": {
+     "loop": true,
+     "events": {}
+    }
+   },
+   "viewTargetY": 2.5,
+   "viewDist": 34,
+   "use": "沖で背と首だけ水面に出してループ再生（全身は見せない）。噛みつき動作込み"
+  },
+  {
+   "id": "seagull",
+   "label": "カモメ",
+   "file": "seagull/seagull.glb",
+   "scale": 1.1404,
+   "size_m": "wingspan 1.3",
+   "ground": true,
+   "lift": 1.2,
+   "credit": "\"Seagull\" by Dayvable — https://sketchfab.com/3d-models/seagull-dc42ffc81c86480e9e7f7752fa134174",
+   "license": "CC BY 4.0",
+   "clipLabels": {
+    "ArmatureAction.006": "飛行（羽ばたき＋滑空、9.5 s ループ）"
+   },
+   "clips": {
+    "ArmatureAction.006": {
+     "loop": true,
+     "events": {}
+    }
+   },
+   "viewTargetY": 1.2,
+   "viewDist": 5,
+   "use": "海岸の上空。群れはインスタンスで時間をずらして再生"
+  },
+  {
+   "id": "ram",
+   "label": "雄羊（ポリュペモスの羊）",
+   "file": "ram/ram.glb",
+   "scale": 0.0777,
+   "size_m": "length 1.5",
+   "ground": true,
+   "lift": 0.0,
+   "credit": "\"Bighorn Sheep\" by Nioma van der Steen — https://sketchfab.com/3d-models/bighorn-sheep-d02aca356cfb4d5b9836b7c4663bd447",
+   "license": "CC BY 4.0",
+   "clipLabels": {
+    "Take 001": "歩き（1.25 s ループ）"
+   },
+   "clips": {
+    "Take 001": {
+     "loop": true,
+     "events": {}
+    }
+   },
+   "viewTargetY": 0.8,
+   "viewDist": 5.5,
+   "use": "洞窟前の羊囲い。608面の軽いローポリなので群れ向き。近景は粗い"
+  }
+ ]
+}

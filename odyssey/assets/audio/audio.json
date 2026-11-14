@@ -1,0 +1,932 @@
+{
+ "note": "ODYSSEY v2 world/combat sounds. Ogg Vorbis 44.1 kHz. one-shots mono (for PannerNode), loops stereo & seamless. gain = suggested mix level. Nobody has listened to these yet (built and checked by measurement only).",
+ "sources": {
+  "kenney_impact": {
+   "page": "https://kenney.nl/assets/impact-sounds",
+   "author": "Kenney (kenney.nl)",
+   "lic": "CC0 1.0"
+  },
+  "kenney_rpg": {
+   "page": "https://kenney.nl/assets/rpg-audio",
+   "author": "Kenney (kenney.nl)",
+   "lic": "CC0 1.0"
+  },
+  "oga_fantozzi": {
+   "page": "https://opengameart.org/content/fantozzis-footsteps-grasssand-stone",
+   "author": "Fantozzi (submitted by qubodup)",
+   "lic": "CC0"
+  },
+  "oga_sword": {
+   "page": "https://opengameart.org/content/20-sword-sound-effects-attacks-and-clashes",
+   "author": "StarNinjas",
+   "lic": "CC0"
+  },
+  "oga_armor": {
+   "page": "https://opengameart.org/content/footsteps-leather-cloth-armor",
+   "author": "HaelDB",
+   "lic": "CC0 (dual OGA-BY 3.0 / CC0; CC0 chosen)"
+  },
+  "oga_waves": {
+   "page": "https://opengameart.org/content/beach-ocean-waves",
+   "author": "jasinski (via qubodup)",
+   "lic": "CC0"
+  },
+  "oga_crowd": {
+   "page": "https://opengameart.org/content/crowd-shoutingspeaking-ambience",
+   "author": "StarNinjas",
+   "lic": "CC0"
+  },
+  "oga_fireplace": {
+   "page": "https://opengameart.org/content/fireplace-sound-loop",
+   "author": "PagDev",
+   "lic": "CC0"
+  },
+  "oga_troll": {
+   "page": "https://opengameart.org/content/big-scary-troll-sounds",
+   "author": "Darsycho",
+   "lic": "CC0"
+  },
+  "oga_monsterroar": {
+   "page": "https://opengameart.org/content/cc0-deep-monster-roar",
+   "author": "trazzz123",
+   "lic": "CC0"
+  },
+  "oga_stomp": {
+   "page": "https://opengameart.org/content/mech-stomp-step-sound",
+   "author": "hc",
+   "lic": "CC0"
+  },
+  "c_pebble": {
+   "page": "https://commons.wikimedia.org/wiki/File:On_a_pebble_beach.ogg",
+   "author": "earthcalling",
+   "lic": "Public domain"
+  },
+  "c_wind": {
+   "page": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+   "author": "Tvabutzku1234",
+   "lic": "CC0"
+  },
+  "c_gull1": {
+   "page": "https://commons.wikimedia.org/wiki/File:Gull_1.ogg",
+   "author": "avphillips",
+   "lic": "Public domain"
+  },
+  "c_gull2": {
+   "page": "https://commons.wikimedia.org/wiki/File:Gull_2.ogg",
+   "author": "avphillips",
+   "lic": "Public domain"
+  },
+  "c_herring": {
+   "page": "https://commons.wikimedia.org/wiki/File:XC707075_-_European_Herring_Gull_-_Larus_argentatus.mp3",
+   "author": "Sonothèque ADVL (xeno-canto XC707075)",
+   "lic": "CC0"
+  },
+  "c_grizzly": {
+   "page": "https://commons.wikimedia.org/wiki/File:Yellowstone_sound_library_-_Grizzly_Bears_Roar_-_001.mp3",
+   "author": "NPS & MSU Acoustic Atlas / Jennifer Jerrett",
+   "lic": "Public domain"
+  },
+  "c_growls": {
+   "page": "https://commons.wikimedia.org/wiki/File:Monster_growls.ogg",
+   "author": "stilgar",
+   "lic": "Public domain"
+  }
+ },
+ "groups": {
+  "step_sand": {
+   "files": [
+    "step_sand_01.ogg",
+    "step_sand_02.ogg",
+    "step_sand_03.ogg",
+    "step_sand_04.ogg",
+    "step_sand_05.ogg",
+    "step_sand_06.ogg"
+   ],
+   "loop": false,
+   "gain": 0.55,
+   "sources": [
+    "oga_fantozzi"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 0.43,
+     "ch": 1,
+     "peak_db": -1.7,
+     "rms_db": -25.8,
+     "lufs": -22.7
+    },
+    {
+     "dur": 0.315,
+     "ch": 1,
+     "peak_db": -1.0,
+     "rms_db": -24.4,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.299,
+     "ch": 1,
+     "peak_db": -1.8,
+     "rms_db": -27.3,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.39,
+     "ch": 1,
+     "peak_db": -1.7,
+     "rms_db": -26.8,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.337,
+     "ch": 1,
+     "peak_db": -1.2,
+     "rms_db": -26.2,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.325,
+     "ch": 1,
+     "peak_db": -1.1,
+     "rms_db": -23.8,
+     "lufs": -70.0
+    }
+   ]
+  },
+  "step_stone": {
+   "files": [
+    "step_stone_01.ogg",
+    "step_stone_02.ogg",
+    "step_stone_03.ogg",
+    "step_stone_04.ogg",
+    "step_stone_05.ogg",
+    "step_stone_06.ogg"
+   ],
+   "loop": false,
+   "gain": 0.55,
+   "sources": [
+    "oga_fantozzi"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 0.35,
+     "ch": 1,
+     "peak_db": -1.3,
+     "rms_db": -21.5,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.312,
+     "ch": 1,
+     "peak_db": -1.2,
+     "rms_db": -20.4,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.325,
+     "ch": 1,
+     "peak_db": -1.2,
+     "rms_db": -18.9,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.354,
+     "ch": 1,
+     "peak_db": -1.2,
+     "rms_db": -22.0,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.335,
+     "ch": 1,
+     "peak_db": -1.4,
+     "rms_db": -20.7,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.336,
+     "ch": 1,
+     "peak_db": -1.2,
+     "rms_db": -20.8,
+     "lufs": -70.0
+    }
+   ]
+  },
+  "step_grass": {
+   "files": [
+    "step_grass_01.ogg",
+    "step_grass_02.ogg",
+    "step_grass_03.ogg",
+    "step_grass_04.ogg",
+    "step_grass_05.ogg"
+   ],
+   "loop": false,
+   "gain": 0.5,
+   "sources": [
+    "kenney_impact"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 0.087,
+     "ch": 1,
+     "peak_db": -1.0,
+     "rms_db": -17.2,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.157,
+     "ch": 1,
+     "peak_db": -0.9,
+     "rms_db": -18.6,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.144,
+     "ch": 1,
+     "peak_db": -1.1,
+     "rms_db": -18.7,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.073,
+     "ch": 1,
+     "peak_db": -1.0,
+     "rms_db": -17.4,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.087,
+     "ch": 1,
+     "peak_db": -0.9,
+     "rms_db": -17.8,
+     "lufs": -70.0
+    }
+   ]
+  },
+  "step_wood": {
+   "files": [
+    "step_wood_01.ogg",
+    "step_wood_02.ogg",
+    "step_wood_03.ogg",
+    "step_wood_04.ogg",
+    "step_wood_05.ogg"
+   ],
+   "loop": false,
+   "gain": 0.5,
+   "sources": [
+    "kenney_impact"
+   ],
+   "note": "ship deck / planks",
+   "stats": [
+    {
+     "dur": 0.268,
+     "ch": 1,
+     "peak_db": -0.9,
+     "rms_db": -22.0,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.081,
+     "ch": 1,
+     "peak_db": -1.0,
+     "rms_db": -16.3,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.106,
+     "ch": 1,
+     "peak_db": -1.0,
+     "rms_db": -16.6,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.271,
+     "ch": 1,
+     "peak_db": -1.1,
+     "rms_db": -22.3,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.242,
+     "ch": 1,
+     "peak_db": -0.9,
+     "rms_db": -20.3,
+     "lufs": -70.0
+    }
+   ]
+  },
+  "swing": {
+   "files": [
+    "swing_01.ogg",
+    "swing_02.ogg",
+    "swing_03.ogg",
+    "swing_04.ogg",
+    "swing_05.ogg",
+    "swing_06.ogg"
+   ],
+   "loop": false,
+   "gain": 0.6,
+   "sources": [
+    "oga_sword"
+   ],
+   "note": "sword / spear whoosh",
+   "stats": [
+    {
+     "dur": 0.834,
+     "ch": 1,
+     "peak_db": -2.3,
+     "rms_db": -22.1,
+     "lufs": -17.1
+    },
+    {
+     "dur": 0.266,
+     "ch": 1,
+     "peak_db": -2.9,
+     "rms_db": -18.5,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.371,
+     "ch": 1,
+     "peak_db": -2.2,
+     "rms_db": -17.8,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.416,
+     "ch": 1,
+     "peak_db": -2.1,
+     "rms_db": -19.1,
+     "lufs": -15.6
+    },
+    {
+     "dur": 0.455,
+     "ch": 1,
+     "peak_db": -2.7,
+     "rms_db": -24.3,
+     "lufs": -20.4
+    },
+    {
+     "dur": 0.577,
+     "ch": 1,
+     "peak_db": -1.9,
+     "rms_db": -19.3,
+     "lufs": -14.9
+    }
+   ]
+  },
+  "clash": {
+   "files": [
+    "clash_01.ogg",
+    "clash_02.ogg",
+    "clash_03.ogg",
+    "clash_04.ogg",
+    "clash_05.ogg",
+    "clash_06.ogg"
+   ],
+   "loop": false,
+   "gain": 0.85,
+   "sources": [
+    "oga_sword"
+   ],
+   "note": "bronze on bronze (blade vs blade / shield rim)",
+   "stats": [
+    {
+     "dur": 0.372,
+     "ch": 1,
+     "peak_db": -1.1,
+     "rms_db": -17.6,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.272,
+     "ch": 1,
+     "peak_db": -1.0,
+     "rms_db": -17.5,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.233,
+     "ch": 1,
+     "peak_db": -1.0,
+     "rms_db": -21.3,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.219,
+     "ch": 1,
+     "peak_db": -1.8,
+     "rms_db": -18.3,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.231,
+     "ch": 1,
+     "peak_db": -0.9,
+     "rms_db": -20.6,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.528,
+     "ch": 1,
+     "peak_db": -1.9,
+     "rms_db": -23.2,
+     "lufs": -21.2
+    }
+   ]
+  },
+  "hit_shield": {
+   "files": [
+    "hit_shield_01.ogg",
+    "hit_shield_02.ogg",
+    "hit_shield_03.ogg",
+    "hit_shield_04.ogg",
+    "hit_shield_05.ogg"
+   ],
+   "loop": false,
+   "gain": 0.9,
+   "sources": [
+    "kenney_impact"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 0.326,
+     "ch": 1,
+     "peak_db": -1.1,
+     "rms_db": -21.9,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.347,
+     "ch": 1,
+     "peak_db": -1.1,
+     "rms_db": -17.8,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.404,
+     "ch": 1,
+     "peak_db": -1.3,
+     "rms_db": -19.8,
+     "lufs": -22.2
+    },
+    {
+     "dur": 0.205,
+     "ch": 1,
+     "peak_db": -1.2,
+     "rms_db": -15.8,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.559,
+     "ch": 1,
+     "peak_db": -1.5,
+     "rms_db": -21.2,
+     "lufs": -22.8
+    }
+   ]
+  },
+  "hit_flesh": {
+   "files": [
+    "hit_flesh_01.ogg",
+    "hit_flesh_02.ogg",
+    "hit_flesh_03.ogg",
+    "hit_flesh_04.ogg",
+    "hit_flesh_05.ogg"
+   ],
+   "loop": false,
+   "gain": 0.85,
+   "sources": [
+    "kenney_impact",
+    "kenney_rpg"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 0.413,
+     "ch": 1,
+     "peak_db": -1.0,
+     "rms_db": -15.7,
+     "lufs": -17.4
+    },
+    {
+     "dur": 0.386,
+     "ch": 1,
+     "peak_db": -1.2,
+     "rms_db": -19.0,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.375,
+     "ch": 1,
+     "peak_db": -1.0,
+     "rms_db": -15.4,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.403,
+     "ch": 1,
+     "peak_db": -1.3,
+     "rms_db": -17.0,
+     "lufs": -17.9
+    },
+    {
+     "dur": 0.382,
+     "ch": 1,
+     "peak_db": -0.9,
+     "rms_db": -15.6,
+     "lufs": -70.0
+    }
+   ]
+  },
+  "bronze_clatter": {
+   "files": [
+    "bronze_clatter_01.ogg",
+    "bronze_clatter_02.ogg",
+    "bronze_clatter_03.ogg",
+    "bronze_clatter_04.ogg"
+   ],
+   "loop": false,
+   "gain": 0.5,
+   "sources": [
+    "kenney_impact",
+    "oga_armor"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 0.213,
+     "ch": 1,
+     "peak_db": -3.1,
+     "rms_db": -20.4,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.21,
+     "ch": 1,
+     "peak_db": -2.7,
+     "rms_db": -21.0,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.171,
+     "ch": 1,
+     "peak_db": -2.9,
+     "rms_db": -20.7,
+     "lufs": -70.0
+    },
+    {
+     "dur": 0.262,
+     "ch": 1,
+     "peak_db": -3.2,
+     "rms_db": -19.5,
+     "lufs": -70.0
+    }
+   ]
+  },
+  "surf_loop": {
+   "files": [
+    "surf_loop.ogg"
+   ],
+   "loop": true,
+   "gain": 0.7,
+   "sources": [
+    "c_pebble"
+   ],
+   "note": "waves on a pebble beach, 25 s seamless",
+   "stats": [
+    {
+     "dur": 25.0,
+     "ch": 2,
+     "peak_db": -1.2,
+     "rms_db": -23.2,
+     "lufs": -24.2
+    }
+   ]
+  },
+  "wave_crash": {
+   "files": [
+    "wave_crash_01.ogg",
+    "wave_crash_02.ogg",
+    "wave_crash_03.ogg",
+    "wave_crash_04.ogg"
+   ],
+   "loop": false,
+   "gain": 0.55,
+   "sources": [
+    "oga_waves"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 3.491,
+     "ch": 2,
+     "peak_db": -2.5,
+     "rms_db": -21.2,
+     "lufs": -17.3
+    },
+    {
+     "dur": 2.214,
+     "ch": 2,
+     "peak_db": -1.8,
+     "rms_db": -18.9,
+     "lufs": -14.6
+    },
+    {
+     "dur": 1.979,
+     "ch": 2,
+     "peak_db": -2.2,
+     "rms_db": -18.8,
+     "lufs": -14.2
+    },
+    {
+     "dur": 3.254,
+     "ch": 2,
+     "peak_db": -2.2,
+     "rms_db": -20.0,
+     "lufs": -15.9
+    }
+   ]
+  },
+  "wind_loop": {
+   "files": [
+    "wind_loop.ogg"
+   ],
+   "loop": true,
+   "gain": 0.45,
+   "sources": [
+    "c_wind"
+   ],
+   "note": "sea wind, softened (lowpass 3.2 kHz), 30 s seamless",
+   "stats": [
+    {
+     "dur": 30.0,
+     "ch": 2,
+     "peak_db": -7.8,
+     "rms_db": -22.0,
+     "lufs": -19.3
+    }
+   ]
+  },
+  "gull": {
+   "files": [
+    "gull_01.ogg",
+    "gull_02.ogg",
+    "gull_03.ogg",
+    "gull_04.ogg",
+    "gull_05.ogg",
+    "gull_06.ogg",
+    "gull_07.ogg"
+   ],
+   "loop": false,
+   "gain": 0.35,
+   "sources": [
+    "c_gull1",
+    "c_gull2",
+    "c_herring"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 1.25,
+     "ch": 1,
+     "peak_db": -1.5,
+     "rms_db": -12.7,
+     "lufs": -10.1
+    },
+    {
+     "dur": 1.4,
+     "ch": 1,
+     "peak_db": -1.8,
+     "rms_db": -12.6,
+     "lufs": -8.0
+    },
+    {
+     "dur": 1.2,
+     "ch": 1,
+     "peak_db": -1.8,
+     "rms_db": -19.9,
+     "lufs": -16.4
+    },
+    {
+     "dur": 1.2,
+     "ch": 1,
+     "peak_db": -1.8,
+     "rms_db": -10.9,
+     "lufs": -7.9
+    },
+    {
+     "dur": 1.65,
+     "ch": 1,
+     "peak_db": -2.4,
+     "rms_db": -14.8,
+     "lufs": -11.1
+    },
+    {
+     "dur": 1.45,
+     "ch": 1,
+     "peak_db": -2.1,
+     "rms_db": -16.8,
+     "lufs": -14.6
+    },
+    {
+     "dur": 2.3,
+     "ch": 1,
+     "peak_db": -2.2,
+     "rms_db": -17.8,
+     "lufs": -15.5
+    }
+   ]
+  },
+  "fire_loop": {
+   "files": [
+    "fire_loop.ogg"
+   ],
+   "loop": true,
+   "gain": 0.6,
+   "sources": [
+    "oga_fireplace"
+   ],
+   "note": "crackling fire, 20 s seamless",
+   "stats": [
+    {
+     "dur": 20.0,
+     "ch": 2,
+     "peak_db": -1.3,
+     "rms_db": -26.8,
+     "lufs": -25.7
+    }
+   ]
+  },
+  "crowd_loop": {
+   "files": [
+    "crowd_loop.ogg"
+   ],
+   "loop": true,
+   "gain": 0.55,
+   "sources": [
+    "oga_crowd"
+   ],
+   "note": "soldiers shouting, 20 s seamless",
+   "stats": [
+    {
+     "dur": 20.0,
+     "ch": 2,
+     "peak_db": -9.7,
+     "rms_db": -20.0,
+     "lufs": -17.0
+    }
+   ]
+  },
+  "crowd_shout": {
+   "files": [
+    "crowd_shout_01.ogg",
+    "crowd_shout_02.ogg",
+    "crowd_shout_03.ogg"
+   ],
+   "loop": false,
+   "gain": 0.6,
+   "sources": [
+    "oga_crowd"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 2.1,
+     "ch": 2,
+     "peak_db": -1.2,
+     "rms_db": -11.6,
+     "lufs": -8.3
+    },
+    {
+     "dur": 2.1,
+     "ch": 2,
+     "peak_db": -2.4,
+     "rms_db": -12.1,
+     "lufs": -8.7
+    },
+    {
+     "dur": 2.2,
+     "ch": 2,
+     "peak_db": -2.1,
+     "rms_db": -12.0,
+     "lufs": -8.6
+    }
+   ]
+  },
+  "giant_roar": {
+   "files": [
+    "giant_roar_01.ogg",
+    "giant_roar_02.ogg",
+    "giant_roar_03.ogg"
+   ],
+   "loop": false,
+   "gain": 1.0,
+   "sources": [
+    "c_grizzly",
+    "oga_monsterroar",
+    "oga_troll"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 5.083,
+     "ch": 1,
+     "peak_db": -1.1,
+     "rms_db": -15.9,
+     "lufs": -18.3
+    },
+    {
+     "dur": 2.053,
+     "ch": 1,
+     "peak_db": -1.1,
+     "rms_db": -15.9,
+     "lufs": -15.4
+    },
+    {
+     "dur": 3.726,
+     "ch": 1,
+     "peak_db": -1.0,
+     "rms_db": -19.6,
+     "lufs": -16.5
+    }
+   ]
+  },
+  "giant_growl": {
+   "files": [
+    "giant_growl_01.ogg",
+    "giant_growl_02.ogg",
+    "giant_growl_03.ogg"
+   ],
+   "loop": false,
+   "gain": 0.8,
+   "sources": [
+    "c_growls"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 2.25,
+     "ch": 1,
+     "peak_db": -1.8,
+     "rms_db": -15.8,
+     "lufs": -15.8
+    },
+    {
+     "dur": 1.883,
+     "ch": 1,
+     "peak_db": -2.1,
+     "rms_db": -22.6,
+     "lufs": -21.4
+    },
+    {
+     "dur": 3.0,
+     "ch": 1,
+     "peak_db": -2.1,
+     "rms_db": -16.0,
+     "lufs": -16.7
+    }
+   ]
+  },
+  "giant_step": {
+   "files": [
+    "giant_step_01.ogg",
+    "giant_step_02.ogg",
+    "giant_step_03.ogg"
+   ],
+   "loop": false,
+   "gain": 1.0,
+   "sources": [
+    "kenney_impact",
+    "oga_stomp"
+   ],
+   "note": "",
+   "stats": [
+    {
+     "dur": 0.953,
+     "ch": 1,
+     "peak_db": -0.9,
+     "rms_db": -17.0,
+     "lufs": -21.7
+    },
+    {
+     "dur": 1.035,
+     "ch": 1,
+     "peak_db": -0.9,
+     "rms_db": -17.0,
+     "lufs": -22.6
+    },
+    {
+     "dur": 1.035,
+     "ch": 1,
+     "peak_db": -0.9,
+     "rms_db": -16.7,
+     "lufs": -22.3
+    }
+   ]
+  }
+ }
+}
